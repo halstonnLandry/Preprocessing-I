@@ -57,3 +57,88 @@ html, body {
     height: 100%;
 }
 
+//My code starts here
+
+.container{
+		font-size: 30px;
+		color:white;
+		font-family:'Tulpen One';
+		background-image: url(/images/lbg.png);
+		height:100vh;
+		display:flex;
+		flex-direction: row-reverse;}
+	.content{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.top{
+			display:flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			height:50%;
+			margin-left:10px;
+			.about{
+				margin:10px;
+				width:25%;
+				height: 35%;
+			}
+		}
+		.bot{
+			display: flex;
+			justify-content: space-between;
+			height:50%;
+			section{
+				margin: 10px;
+				width:30%;
+			}
+		}
+	}
+	.sidebar{
+			display:flex; flex-direction: column;
+			justify-content:space-between;
+			background-color: #d3af39;
+			width:20%;
+			border-right: 1px solid white;
+			.contact{
+				padding:5px;
+				margin:10px;
+				text-align:left;
+				display:block;
+			}
+			.portfolio{
+				align-self: center;
+				color:purple;
+				text-align:center;
+				border-top: 5px solid;
+				border-bottom: 5px solid;
+				padding:10%;
+			}
+			.portrait{
+				margin-bottom:10%;
+				display:flex;
+				justify-content:center;
+			}
+			.portrait img{
+				border:1px solid white;
+				width:80%;
+				height:auto;
+			}
+	}
+h1{
+	font-family: 'Vast Shadow';
+	font-size:40px;
+	text-align:right;
+	margin:30px;
+}
+h2{
+	font-family: 'Michroma';
+	font-size:30px;
+	text-decoration: underline;
+	margin-bottom:20px;
+}
+
+section:not(.sidebar){
+	border:1px solid white;
+	padding:10px;
+}
