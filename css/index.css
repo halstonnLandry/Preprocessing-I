@@ -146,13 +146,13 @@ body {
 .content {
   width: 80%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
 .content .top {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  flex-direction: row-reverse;
   height: 50%;
   margin-left: 10px;
 }
@@ -172,8 +172,8 @@ body {
 }
 .sidebar {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   background-color: #d3af39;
   width: 20%;
   border-right: 1px solid white;

@@ -58,24 +58,29 @@ html, body {
 }
 
 //My code starts here
-
+.space(){
+	display:flex;
+	justify-content: space-between;
+}
+@text:white;
+@name:'Vast Shadow';
+@headers:'Michroma';
+@main:'Tulpen One';
 .container{
 		font-size: 30px;
-		color:white;
-		font-family:'Tulpen One';
+		color:@text;
+		font-family:@main;
 		background-image: url(../images/lbg.jpg);
 		height:100vh;
 		display:flex;
 		flex-direction: row-reverse;}
 	.content{
 		width: 80%;
-		display: flex;
+		.space();
 		flex-direction: column;
-		justify-content: space-between;
 		.top{
-			display:flex;
+			.space();
 			flex-direction: row-reverse;
-			justify-content: space-between;
 			height:50%;
 			margin-left:10px;
 			.about{
@@ -85,8 +90,7 @@ html, body {
 			}
 		}
 		.bot{
-			display: flex;
-			justify-content: space-between;
+			.space();
 			height:50%;
 			section{
 				margin: 10px;
@@ -95,8 +99,8 @@ html, body {
 		}
 	}
 	.sidebar{
-			display:flex; flex-direction: column;
-			justify-content:space-between;
+			.space();
+			 flex-direction: column;
 			background-color: #d3af39;
 			width:20%;
 			border-right: 1px solid white;
@@ -126,13 +130,13 @@ html, body {
 			}
 	}
 h1{
-	font-family: 'Vast Shadow';
+	font-family: @name;
 	font-size:40px;
 	text-align:right;
 	margin:30px;
 }
 h2{
-	font-family: 'Michroma';
+	font-family: @headers;
 	font-size:30px;
 	text-decoration: underline;
 	margin-bottom:20px;
