@@ -132,6 +132,7 @@ table {
 }
 html,
 body {
+  background-color: black;
   height: 100%;
 }
 .container {
@@ -143,30 +144,61 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    background-image: none;
+    Background-color: black;
+    font-size: 20px;
+  }
+}
 .content {
   width: 80%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .content {
+    order: 1;
+  }
+}
 .content .top {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   height: 50%;
-  margin-left: 10px;
 }
-.content .top .about {
-  margin: 10px;
+@media (max-width: 500px) {
+  .content .top {
+    flex-direction: column;
+  }
+}
+.content .about {
   width: 25%;
   height: 35%;
 }
-.content .bot {
+@media (max-width: 500px) {
+  .content .about {
+    width: 80%;
+    height: auto;
+  }
+}
+.bot {
   display: flex;
   justify-content: space-between;
   height: 50%;
 }
-.content .bot section {
+@media (max-width: 500px) {
+  .bot {
+    height: auto;
+    justify-content: space-evenly;
+  }
+  .bot h2 {
+    font-size: 13px;
+  }
+}
+.bot section {
   margin: 10px;
   width: 30%;
 }
@@ -177,6 +209,18 @@ body {
   background-color: #d3af39;
   width: 20%;
   border-right: 1px solid white;
+}
+@media (max-width: 500px) {
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin-right: 0;
+  }
 }
 .sidebar .contact {
   padding: 5px;
@@ -192,6 +236,11 @@ body {
   border-bottom: 5px solid;
   padding: 10%;
 }
+@media (max-width: 500px) {
+  .sidebar nav {
+    padding: 1%;
+  }
+}
 .sidebar .portrait {
   margin-bottom: 10%;
   display: flex;
@@ -202,17 +251,35 @@ body {
   width: 80%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .sidebar .portrait img {
+    width: auto;
+    height: 80%;
+    margin: 10px 10px 0 0;
+  }
+}
 h1 {
   font-family: 'Vast Shadow';
   font-size: 40px;
   text-align: right;
   margin: 30px;
 }
+@media (max-width: 500px) {
+  h1 {
+    margin: 4px;
+  }
+}
 h2 {
   font-family: 'Michroma';
   font-size: 30px;
   text-decoration: underline;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 section:not(.sidebar) {
   border: 1px solid white;
